@@ -11,6 +11,10 @@ body {
     background-color: #f4f6f8;
     color: #222222;
     line-height: 1.6;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ===== HEADER (Flexbox) ===== */
@@ -63,8 +67,10 @@ nav a:hover, nav a.active {
 /* ===== MAIN ===== */
 main {
     max-width: 900px;
+    width: 100%;
     margin: 30px auto;
     padding: 0 15px;
+    flex: 1;
 }
 
 /* ===== SECTION (Box Model) ===== */
