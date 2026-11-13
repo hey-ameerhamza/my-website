@@ -1,7 +1,7 @@
 # My Website
 
-Name: Ameer Hamza
-Roll No: 01-xxxxxx-xxx
+Name: Muhammad Ameer Hamza
+Roll No: 01-134262-054
 Course: Introduction to ICT Lab (CSL114)
 
 A three-page static website (Home, About, Contact)
