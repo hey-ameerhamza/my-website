@@ -1,0 +1,244 @@
+/* ===== RESET / BOX MODEL ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* ===== HEADER (Flexbox) ===== */
+header {
+    background-color: #5549ff;
+    color: #ffffff;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header img.logo {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+.site-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== NAVIGATION (Flexbox) ===== */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #d1d0ff;
+    text-decoration: underline;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* ===== SECTION (Box Model) ===== */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* ===== WELCOME SECTION GRID ===== */
+#welcome {
+    border-left: 6px solid #5549ff;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    align-items: center;
+}
+
+.welcome-text h2 {
+    font-size: 26px;
+    color: #1f3a5f;
+    margin-bottom: 6px;
+}
+
+.highlight {
+    color: #5549ff;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.bio-text {
+    font-style: italic;
+    color: #444444;
+    font-size: 14px;
+}
+
+.welcome-image img.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #5549ff;
+    box-shadow: 0 4px 10px rgba(85, 73, 255, 0.15);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content p {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-content img.image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ===== LEARNING SECTION ===== */
+.learning-section h2 {
+    font-size: 20px;
+    color: #1f3a5f;
+    margin-bottom: 12px;
+}
+
+.learning-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.learning-list li {
+    padding: 4px 0;
+    font-weight: 500;
+}
+
+/* ===== CARDS (Flexbox) ===== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+    background-color: #eef2f7;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ===== TABLE ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1f3a5f;
+    color: white;
+}
+
+/* ===== FORM ===== */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #333333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 22px;
+    background-color: #5549ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #4235e0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #1f3a5f;
+    color: white;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVE MEDIA QUERY ===== */
+@media (max-width: 680px) {
+    #welcome {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .welcome-image {
+        order: -1;
+        margin: 0 auto;
+    }
+}
